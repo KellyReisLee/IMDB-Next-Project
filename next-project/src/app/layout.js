@@ -5,14 +5,14 @@ import Providers from '../app/Providers'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "IMDB - Clone",
+  title: "IMDb - Clone",
   description: "This is a movie database clone",
 };
 
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning >
       <body className={inter.className}>
         <Providers>
           <Header />

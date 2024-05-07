@@ -1,13 +1,15 @@
 import MoviesItem from '@/components/MoviesItem';
 import React from 'react'
 
+
+
 const API_KEY = process.env.API_KEY;
 
 const Home = async ({ searchParams }) => {
 
   const genre = searchParams.genre || 'fetchTrending';
   const res = await fetch(`https://api.themoviedb.org/3${genre === 'fetchTopRated' ? `/movie/top_rated` : `/trending/all/week`
-    }?api_key=${API_KEY}&language=en-US&page=1`)
+    }?api_key=${API_KEY}&language=en-US&page=1`, { next: { revalidate: 30000 } })
 
   const resData = await res.json()
   if (!res.ok) {
@@ -16,6 +18,7 @@ const Home = async ({ searchParams }) => {
 
   const moviesData = resData.results
 
+
   return (
     <div className='p-8 h-screen'>
       {
@@ -23,6 +26,7 @@ const Home = async ({ searchParams }) => {
           <MoviesItem key={movie.id} moviesData={movie} />
         ))
       }
+
 
     </div>
   )

@@ -4,6 +4,8 @@ import Header from "@/components/Header";
 import Providers from '../app/Providers'
 import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
+import { Suspense } from 'react';
+import Loading from "./loading";
 
 export const metadata = {
   title: "IMDb - Clone",
@@ -18,7 +20,9 @@ export default function RootLayout({ children }) {
         <Providers>
           <Header />
           <Navbar />
-          {children}
+          <Suspense fallback={<Loading />}>
+            {children}
+          </Suspense>
         </Providers>
       </body>
 

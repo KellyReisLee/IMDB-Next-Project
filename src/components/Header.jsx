@@ -5,6 +5,7 @@ import { BsFillInfoCircleFill } from 'react-icons/bs'
 import Link from 'next/link'
 import DarkModeSwitch from './DarkModeSwitch'
 
+
 const Header = () => {
   return (
     <div className='flex justify-between items-center px-5 py-7 max-w-screen-2xl mx-6'>
@@ -16,7 +17,7 @@ const Header = () => {
         <DarkModeSwitch />
         <Link href={'/'} className='flex gap-1 items-center'>
           <span className='text-2xl font-bold  text-gray-700 bg-amber-500 py-1 px-2 rounded-lg'>IMDb</span>
-          <span className='text-xl hidden sm:inline text-amber-500'>Clone</span>
+          <span className='text-xl text-gray-600 hidden sm:inline dark:text-gray-200'>Clone</span>
         </Link>
       </div>
     </div>

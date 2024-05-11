@@ -9,9 +9,7 @@ const SearchPage = async ({ params }) => {
   );
 
   const data = await res.json()
-  const results = data.results
-  console.log(results);
-
+  const results = data.results;
 
   return (
     <>

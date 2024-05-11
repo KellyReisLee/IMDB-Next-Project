@@ -13,7 +13,7 @@ const DarkModeSwitch = () => {
 
   useEffect(() => {
     setMounted(true)
-  })
+  }, [])
   return (
     <div>
       {

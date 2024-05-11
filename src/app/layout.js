@@ -22,9 +22,7 @@ export default function RootLayout({ children }) {
           <Header />
           <Navbar />
           <SearchBox />
-          <Suspense fallback={<Loading />}>
-            {children}
-          </Suspense>
+          {children}
         </Providers>
       </body>
 

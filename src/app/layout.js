@@ -19,7 +19,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Providers>
           <Header />
-          <Navbar />
+          <Suspense>
+            <Navbar />
+          </Suspense>
           <Suspense>
             <SearchBox />
           </Suspense>

@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import React from 'react'
+import React, { Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 
 const NavbarItem = ({ title, param }) => {
@@ -9,15 +9,17 @@ const NavbarItem = ({ title, param }) => {
 
 
   return (
-    <div>
-      <Link className={` font-semibold ${genre === param
-        ? 'underline underline-offset-8  decoration-4 decoration-amber-500 rounded-lg'
-        : ''
-        }`}
-        href={`/?genre=${param}`}>
-        {title}
-      </Link>
-    </div>
+    <Suspense>
+      <div>
+        <Link className={` font-semibold ${genre === param
+          ? 'underline underline-offset-8  decoration-4 decoration-amber-500 rounded-lg'
+          : ''
+          }`}
+          href={`/?genre=${param}`}>
+          {title}
+        </Link>
+      </div>
+    </Suspense>
   )
 }
 

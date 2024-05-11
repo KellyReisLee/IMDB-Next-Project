@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<H1 align ="center" > IMDb Clone - Using Next.js </h1>
+<h5  align ="center"> 
+Project created using Next.js, tailwind and TMDb API </h5>
+<br/>
 
-## Getting Started
+## About
 
-First, run the development server:
+It's Fully Responsive IMDb app created using Next.js Tailwind and TMDb API. This project has Homepage and a AboutPage. The project also uses next-themes package specifically designed for managing themes in Next.js applications.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+You also que see two main categories - The trending category and the Top Rated category, so you can see movies on those categories, and you also can search using the search bar.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies used:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- [Next js ](https://nextjs.org/) - Next.js enables you to create high-quality web applications with the power of React components.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Next Themes](https://github.com/pacocoursey/next-themes) - is a package specifically designed for managing themes in Next.js applications. It simplifies the process of adding theme functionality to your Next.js projects. Here's how it works:
 
-## Learn More
+- [React js ](https://www.npmjs.com/package/react) - JavaScript library that is used for building user interfaces specifically for single-page applications
 
-To learn more about Next.js, take a look at the following resources:
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom) - To handle routing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [React icons](https://react-icons.github.io/react-icons/) -
+  Small library that helps you add icons to your react apps.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Images:
 
-## Deploy on Vercel
+<h3>HomePage dark mode</h3>
+<a href="https://freeimage.host/i/J69y6mv"><img src="https://iili.io/J69y6mv.md.png" alt="J69y6mv.md.png" border="0"></a>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<h3>HomePage light mode</h3>
+<a href="https://freeimage.host/i/J69ygdg"><img src="https://iili.io/J69ygdg.md.png" alt="J69ygdg.md.png" border="0"></a>
+
+---
+
+<h3>Trending Content</h3>
+
+<a href="https://freeimage.host/i/J69yr7a"><img src="https://iili.io/J69yr7a.md.png" alt="J69yr7a.md.png" border="0"></a>
+
+---
+
+<h3>Top Rated Content</h3>
+<a href="https://freeimage.host/i/J69ySrF"><img src="https://iili.io/J69ySrF.md.png" alt="J69ySrF.md.png" border="0"></a>
+
+---
+
+<h3>Search bar Content</h3>
+<a href="https://freeimage.host/i/J69ysXp"><img src="https://iili.io/J69ysXp.md.png" alt="J69ysXp.md.png" border="0"></a>
+
+---
+
+<h3>AboutPage Content</h3>
+<a href="https://freeimage.host/i/J69yiIR"><img src="https://iili.io/J69yiIR.md.png" alt="J69yiIR.md.png" border="0"></a>
+
+---
+
+## Author
+
+- Portfolio: [kellywebdeveloper](https://kellydeveloper.vercel.app)
+- Github: [KellyReisLee](https://github.com/KellyReisLee)
+- Linkedin: [kellyreis-webdev](https://www.linkedin.com/in/kellyreis-webdev/)

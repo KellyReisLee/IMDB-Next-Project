@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 import { Suspense } from 'react';
 import Loading from "./loading";
+import SearchBox from "@/components/SearchBox";
 
 export const metadata = {
   title: "IMDb - Clone",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <Header />
           <Navbar />
+          <SearchBox />
           <Suspense fallback={<Loading />}>
             {children}
           </Suspense>

@@ -26,7 +26,7 @@ const MoviePage = async ({ params }) => {
             height={500}
             alt={`image ${movie.original_title}`}
             priority
-            className='rounded border-8  p-3 object-cover border-none shadow-lg'
+            className='rounded border-8  p-3 border-none shadow-lg'
           />
 
 
